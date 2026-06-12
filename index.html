@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mini Social Media App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Mini Social Media App</h1>
+
+
+        <!-- REGISTER -->
+
+        <div class="section">
+
+            <h2>Register</h2>
+
+            <input type="text" id="name" placeholder="Enter name">
+
+            <input type="email" id="email" placeholder="Enter email">
+
+            <input type="password" id="password" placeholder="Enter password">
+
+            <button onclick="registerUser()">
+                Register
+            </button>
+
+        </div>
+
+
+        <!-- LOGIN -->
+
+        <div class="section">
+
+            <h2>Login</h2>
+
+            <input type="email" id="loginEmail" placeholder="Enter email">
+
+            <input type="password" id="loginPassword" placeholder="Enter password">
+
+            <button onclick="loginUser()">
+                Login
+            </button>
+
+        </div>
+
+
+        <!-- CREATE POST -->
+
+        <div class="section">
+
+            <h2>Create Post</h2>
+
+            <input type="text" id="postText" placeholder="Write something...">
+
+            <input type="file" id="imageInput">
+
+            <button onclick="createPost()">
+                Post
+            </button>
+
+        </div>
+
+
+        <!-- FEED -->
+
+        <div class="section">
+
+            <h2>Feed</h2>
+
+            <div id="posts"></div>
+
+        </div>
+
+
+        <!-- MY POSTS -->
+
+        <div class="section">
+
+            <h2>My Posts</h2>
+
+            <div id="myPosts"></div>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
