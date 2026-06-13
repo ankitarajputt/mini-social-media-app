@@ -167,7 +167,7 @@ async function getPosts() {
 
     try {
 
-        const response = await fetch("https://mini-social-media-app-production.up.railway.app/posts");
+        const response = await fetch("https://mini-social-media-app-production.up.railway.app");
 
         const posts = await response.json();
 
